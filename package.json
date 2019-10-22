@@ -1,0 +1,27 @@
+{
+  "name": "js_restaurant",
+  "version": "1.0.0",
+  "description": "restaurant page made with javascript only",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress -p",
+    "watch": "webpack --progress --watch",
+    "server": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a6macleod/js_restaurant.git"
+  },
+  "author": "Andrew MacLeod",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a6macleod/js_restaurant/issues"
+  },
+  "homepage": "https://github.com/a6macleod/js_restaurant#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
