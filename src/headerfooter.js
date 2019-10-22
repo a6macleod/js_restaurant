@@ -1,6 +1,6 @@
-console.log('this is the HeaderFooter page');
 
 const content = document.querySelector('#content');
+
 
 
 const header = () => {
@@ -8,8 +8,7 @@ const header = () => {
   function createHeader() {
     const header = document.createElement('header');
     header.classList.add('header');
-    content.appendChild(header);
-    //return header;
+    return header;
   }
 
   function createLogo () {
@@ -43,12 +42,10 @@ const header = () => {
     nav.appendChild(about);
     nav.appendChild(menu);
     nav.appendChild(contact);
-    
-    return nav;
   }
 
   const header = createHeader();
-  
+  content.appendChild(header);
 
   const logo = createLogo();
   header.appendChild(logo);
@@ -58,11 +55,16 @@ const header = () => {
 }
 
 
-// Photo by Petr Sevcovic on Unsplash (cafe)
 
+const footer = () => {
+  const footer = document.createElement('footer');
+  footer.id = 'footer';
+  content.appendChild(footer);
 
+  const credit = document.createElement('p');
+  credit.id = 'credit';
+  credit.innerHTML = 'Created by <a href="https://github.com/a6macleod/js_restaurant">Andrew MacLeod</a>'
+  footer.appendChild(credit);
+}
 
-// create footer
-  // Website created by (link to github https://github.com/a6macleod/js_restaurant)
-
-  export { header }
+  export { header, footer }
