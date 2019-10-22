@@ -26,7 +26,7 @@ const about = () => {
   missionContent.innerHTML = 'A mission statment about the Treat Factory';
   aboutSection.appendChild(missionContent);
 
-  // about section
+  // about us section
   const aboutTitle = document.createElement('h2');
   aboutTitle.classList.add('sectionTitle');
   aboutTitle.innerHTML = 'About Us!';
