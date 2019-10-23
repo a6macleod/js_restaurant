@@ -63,7 +63,7 @@ const footer = () => {
 
   const credit = document.createElement('p');
   credit.id = 'credit';
-  credit.innerHTML = 'Created by <a href="https://github.com/a6macleod/js_restaurant">Andrew MacLeod</a>'
+  credit.innerHTML = 'Created by <br><a href="https://github.com/a6macleod/js_restaurant">Andrew MacLeod</a>'
   footer.appendChild(credit);
 }
 

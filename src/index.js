@@ -7,7 +7,7 @@ import { contact } from './contact.js'
 
 const content = document.querySelector('#content');
 
-let currentTab = 'contact';
+let currentTab = 'about';
 
 header();
 if (currentTab == 'about'){
