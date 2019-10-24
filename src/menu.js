@@ -1,17 +1,22 @@
-console.log('this is the Menu page');
+
+import { footer } from './footer.js'
 
 const content = document.querySelector('#content');
 
 const menu = () => {
+
+
 // create the body
   const menuContainer = document.createElement('div');
-  menuContainer.id = 'menuSection';
+  menuContainer.id = 'contentContainer';
+  menuContainer.classList.add('contentArea');
   content.appendChild(menuContainer);
   
 
   // coffee Section
   const coffeeContainer = document.createElement('div');
   coffeeContainer.id = 'coffeeSection';
+  coffeeContainer.classList.add('menuSection')
   menuContainer.appendChild(coffeeContainer);
 
   const coffeeTitle = document.createElement('h2');
@@ -22,13 +27,13 @@ const menu = () => {
   // 1
   const pourOver = document.createElement('h3');
   pourOver.classList.add('menuItem');
-  pourOver.innerHTML = 'Pour Over <br> $3';
+  pourOver.innerHTML = 'Pour Over $3';
   coffeeContainer.appendChild(pourOver);
 
   // 2
   const cappucino = document.createElement('h3');
   cappucino.classList.add('menuItem');
-  cappucino.innerHTML = 'Cappucino <br> $4';
+  cappucino.innerHTML = 'Cappucino $4';
   coffeeContainer.appendChild(cappucino);
 
 
@@ -36,6 +41,7 @@ const menu = () => {
   // cookies
   const cookieContainer = document.createElement('div');
   cookieContainer.id = 'cookieSection';
+  cookieContainer.classList.add('menuSection');
   menuContainer.appendChild(cookieContainer);
 
   const cookieTitle = document.createElement('h2');
@@ -46,13 +52,13 @@ const menu = () => {
   // 1
   const oatMeal = document.createElement('h3');
   oatMeal.classList.add('menuItem');
-  oatMeal.innerHTML = 'Oatmeal Chocolate Walnut <br> $2';
+  oatMeal.innerHTML = 'Oatmeal Chocolate Walnut $2';
   cookieContainer.appendChild(oatMeal);
 
   // 2
   const candyCookie = document.createElement('h3');
   candyCookie.classList.add('menuItem');
-  candyCookie.innerHTML = 'M&M Sugar Cookie <br> $2';
+  candyCookie.innerHTML = 'M&M Sugar Cookie     $2';
   cookieContainer.appendChild(candyCookie);
 
 
@@ -60,6 +66,7 @@ const menu = () => {
   // scones
   const sconeContainer = document.createElement('div');
   sconeContainer.id = 'sconeSection';
+  sconeContainer.classList.add('menuSection');
   menuContainer.appendChild(sconeContainer);
 
   const sconeTitle = document.createElement('h2');
@@ -70,14 +77,16 @@ const menu = () => {
   // 1
   const cheeseScone = document.createElement('h3');
   cheeseScone.classList.add('menuItem');
-  cheeseScone.innerHTML = 'Cheese Scone <br> $3';
+  cheeseScone.innerHTML = 'Cheese Scone $3';
   sconeContainer.appendChild(cheeseScone);
 
   // 2
   const orangeScone = document.createElement('h3');
   orangeScone.classList.add('menuItem');
-  orangeScone.innerHTML = 'Orange Scone <br> $3';
+  orangeScone.innerHTML = 'Orange Scone $3';
   sconeContainer.appendChild(orangeScone);
+
+  footer();
 
 }
 

@@ -1,11 +1,14 @@
-console.log('this is the Contact page');
+
+import { footer } from './footer.js'
 
 const content = document.querySelector('#content');
+
 
 const contact = () => {
 // create the body
   const contactContent = document.createElement('div');
-  contactContent.id = 'contactContent';
+  contactContent.id = 'contentContainer';
+  contactContent.classList.add('contentArea');
   content.appendChild(contactContent);
 
   // Hours
@@ -58,6 +61,8 @@ const contact = () => {
   phoneNumber.classList.add('contactContent');
   phoneNumber.innerHTML = '734-333-333';
   phoneContainer.appendChild(phoneNumber);
+
+  footer();
 }
 
 export { contact }
