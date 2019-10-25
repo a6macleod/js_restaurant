@@ -3,8 +3,8 @@ import { footer } from './footer.js'
 
 const content = document.querySelector('#content');
 
-
 const contact = () => {
+
 // create the body
   const contactContent = document.createElement('div');
   contactContent.id = 'contentContainer';
