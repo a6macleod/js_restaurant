@@ -10,7 +10,7 @@ const about = () => {
   content.appendChild(aboutContainer);
 
 
-  // main image (static and let about section scroll over this)
+  // Cafe image photo by Petr Sevcovic on Unsplash
   const backgroundImage = document.createElement('img');
   backgroundImage.src = 'images/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg';
   backgroundImage.setAttribute('alt', "A cozy well lit coffee shop")

@@ -14,6 +14,7 @@ const contact = () => {
   // Hours
   const hoursContainer = document.createElement('div');
   hoursContainer.id = 'hoursContainer';
+  hoursContainer.classList.add('subsectionContainer');
   contactContent.appendChild(hoursContainer);
 
   const hoursTitle = document.createElement('h2');
@@ -29,6 +30,7 @@ const contact = () => {
   // Location
   const locationContainer = document.createElement('div');
   locationContainer.id = 'locationContainer';
+  locationContainer.classList.add('subsectionContainer');
   contactContent.appendChild(locationContainer);
 
   const locationTitle = document.createElement('h2');
@@ -50,6 +52,7 @@ const contact = () => {
   // Phone Number
   const phoneContainer = document.createElement('div');
   phoneContainer.id = 'phoneContainer';
+  phoneContainer.classList.add('subsectionContainer');
   contactContent.appendChild(phoneContainer);
 
   const phoneTitle = document.createElement('h2');

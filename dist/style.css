@@ -55,26 +55,16 @@ footer {
 /* Shared styling */
 .sectionTitle { margin-top: 0; padding-top: 1em; text-align: center; }
 
-/*.contentSection { font-size: 110%; background-color: #ccffff; }*/
+.subsectionContainer { text-align: center; }
 
-#pageContentSection { text-align: center; background-color: red/*#e6ffff*/; }
-
-
+img { position: relative; max-width: 100vw; }
 
 /* About page */
-#aboutContentContainer {
-	position: relative;
-	text-align: center;
-	width: 100%;
-	margin-top: 0;
-}
 .aboutContent {
 	text-align: left;
 	margin: 0 15em;
 	padding: 0 0 2em 0;
 }
-img { position: relative; max-width: 100vw; }
-
 
 /* Menu Page */
 .menuSection {
@@ -85,9 +75,8 @@ img { position: relative; max-width: 100vw; }
 .menuItem {
 	text-align: center;
 }
-
-
-/* Contact Page */
+#coffeeSection { margin-top: 1em; }
+#sconeSection { margin-bottom: 1em; }
 
 
 

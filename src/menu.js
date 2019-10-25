@@ -5,14 +5,19 @@ const content = document.querySelector('#content');
 
 const menu = () => {
 
-
 // create the body
   const menuContainer = document.createElement('div');
   menuContainer.id = 'contentContainer';
   menuContainer.classList.add('contentArea');
   content.appendChild(menuContainer);
   
-
+  // Scone and coffee photo by Jordan Christian on Unsplash
+  const sconeImage = document.createElement('img');
+  sconeImage.src = 'images/jordan-christian-Tl6vDa-JRaE-unsplash.jpg';
+  sconeImage.setAttribute('alt', "A scone and lattee")
+  sconeImage.classList.add('backgroundImage');
+  menuContainer.appendChild(sconeImage);
+  
   // coffee Section
   const coffeeContainer = document.createElement('div');
   coffeeContainer.id = 'coffeeSection';
@@ -24,13 +29,13 @@ const menu = () => {
   coffeeTitle.innerHTML = 'Coffee';
   coffeeContainer.appendChild(coffeeTitle);
   
-  // 1
+  // coffee 1
   const pourOver = document.createElement('h3');
   pourOver.classList.add('menuItem');
   pourOver.innerHTML = 'Pour Over $3';
   coffeeContainer.appendChild(pourOver);
 
-  // 2
+  // coffee 2
   const cappucino = document.createElement('h3');
   cappucino.classList.add('menuItem');
   cappucino.innerHTML = 'Cappucino $4';
@@ -49,13 +54,13 @@ const menu = () => {
   cookieTitle.innerHTML = 'Cookies';
   cookieContainer.appendChild(cookieTitle);
 
-  // 1
+  // cookie 1
   const oatMeal = document.createElement('h3');
   oatMeal.classList.add('menuItem');
   oatMeal.innerHTML = 'Oatmeal Chocolate Walnut $2';
   cookieContainer.appendChild(oatMeal);
 
-  // 2
+  // cookie 2
   const candyCookie = document.createElement('h3');
   candyCookie.classList.add('menuItem');
   candyCookie.innerHTML = 'M&M Sugar Cookie     $2';
@@ -74,13 +79,13 @@ const menu = () => {
   sconeTitle.innerHTML = 'Scones';
   sconeContainer.appendChild(sconeTitle);
 
-  // 1
+  // scones 1
   const cheeseScone = document.createElement('h3');
   cheeseScone.classList.add('menuItem');
   cheeseScone.innerHTML = 'Cheese Scone $3';
   sconeContainer.appendChild(cheeseScone);
 
-  // 2
+  // scones 2
   const orangeScone = document.createElement('h3');
   orangeScone.classList.add('menuItem');
   orangeScone.innerHTML = 'Orange Scone $3';
