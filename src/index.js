@@ -9,7 +9,6 @@ const content = document.querySelector('#content');
 
 let currentTab = 'aboutLink';
 
-
 function renderContentSection() {
   if (currentTab == 'aboutLink'){
     about();
@@ -29,7 +28,6 @@ function updateHighlightedTab (e) {
 }
 
 function changePage (e) {
-  console.log(e.target.id);
 
   // update Nav tab highlight
   updateHighlightedTab(e);
@@ -48,6 +46,7 @@ function changePage (e) {
 header();
 about();
 
+// Nav event listeners
 const pageLinks = document.querySelectorAll('.navBar');
 pageLinks.forEach(link => link.addEventListener('click', (e) => {
   changePage(e);
